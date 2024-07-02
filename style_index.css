@@ -1,0 +1,23 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    background: linear-gradient(to bottom, cyan, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+.container {
+    text-align: center;
+    max-width: 500px;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+.btn {
+    width: 100%;
+    margin-top: 1rem;
+}

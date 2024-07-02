@@ -1,0 +1,21 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    background: linear-gradient(to bottom, #000000, #1e293b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+.container {
+    text-align: center;
+    max-width: 900px;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+.carousel img {
+    object-fit: cover;
+}
