@@ -3,7 +3,7 @@ html, body {
     margin: 0;
 }
 body {
-    background: linear-gradient(to bottom, #000000, #1e293b);
+    background-image:url('images/background_usuarios.png');
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,7 +14,7 @@ body {
     text-align: center;
     max-width: 900px;
     padding: 2rem;
-    margin-top: 4rem;
+    margin-top: 1rem;
 }
 .carousel img {
     object-fit: cover;
