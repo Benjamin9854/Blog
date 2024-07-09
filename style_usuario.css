@@ -3,19 +3,29 @@ html, body {
     margin: 0;
 }
 body {
-    background-image:url('images/background_usuarios.png');
+    background-image: url('images/background_usuarios.png');
+    background-size: cover; /* Asegura que el fondo cubra toda la pantalla */
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
     font-family: 'Arial', sans-serif;
+    background-color: rgba(0, 0, 0, 0.8); /* Capa oscura sobre el fondo */
+    background-blend-mode: overlay; /* Mezcla de capas */
 }
+
 .container {
     text-align: center;
     max-width: 900px;
     padding: 2rem;
     margin-top: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    border-radius: 10px; /* Bordes redondeados */
 }
+
 .carousel img {
     object-fit: cover;
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en las imágenes */
 }
