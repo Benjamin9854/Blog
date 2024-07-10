@@ -14,7 +14,7 @@
         </h1>
         <p class="text-lg mb-6">Tu blog de críticas sobre videojuegos</p>
         <button onclick="location.href='http://localhost/Blog/usuario'" type="button" class="btn text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-2 mb-2">Ingresar como Usuario</button>
-        <button type="button" class="btn text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-2 mb-2">Ingresar como Administrador</button>
+        <button onclick="location.href='http://localhost/Blog/administrador'" type="button" class="btn text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-2 mb-2">Ingresar como Administrador</button>
     </div> 
 </body>
 </html>
