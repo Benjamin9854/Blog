@@ -20,7 +20,7 @@
 <body class="bg-gray-100 text-gray-800">
 
     <header class="bg-gradient-to-r to-teal-300 from-blue-600 text-white p-4">
-        <h1 class="text-3xl font-bold">Videojuego</h1>
+        <h1 class="text-3xl font-bold">CGM</h1>
     </header>
 
     <main class="max-w-4xl mx-auto p-4">

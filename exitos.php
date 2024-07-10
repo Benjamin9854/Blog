@@ -97,7 +97,7 @@
         function addCards(carousel, num, genre) {
             for (let i = 1; i <= num; i++) {
                 const newCard = cardTemplate.cloneNode(true);
-                newCard.querySelector('h5').textContent = `Juego ${i}`;
+                newCard.querySelector('h5').textContent = `Top ${i}`;
                 const linkUrl = `http://localhost/Blog/juego_exito_${genre.toLowerCase()}_${i}`;
                 newCard.querySelectorAll('.card-link').forEach(link => link.href = linkUrl);
                 const imgUrl = `./images/juego_exito_${genre.toLowerCase()}_${i}.jpg`;

@@ -24,19 +24,19 @@
 
 
 
-        <div id="carousel-exitos" class="relative w-full" data-carousel="static">
+        <div id="carousel-exitos" class="relative w-full" data-carousel="slide">
             <!-- Carousel wrapper -->
             <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                  <!-- Item 1 -->
-                <div class="hidden duration-200 ease-linear" data-carousel-item>
-                    <img src="images/juego_exito_acción_2.JPG onclick="location.href='http://localhost/Blog/exitos'" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <div class="hidden duration-700 ease-linear" data-carousel-item>
+                    <img src="images/juego_exito_acción_2.JPG" onclick="location.href='http://localhost/Blog/exitos'" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
                 <!-- Item 2 -->
-                <div class="hidden duration-200 ease-linear" data-carousel-item>
+                <div class="hidden duration-700 ease-linear" data-carousel-item>
                     <img src="images/juego_exito_mundo_abierto_1.jpg" onclick="location.href='http://localhost/Blog/exitos'" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
                 <!-- Item 3 -->
-                <div class="hidden duration-200 ease-linear" data-carousel-item="active">
+                <div class="hidden duration-700 ease-linear" data-carousel-item="active">
                     <img src="images/juego_exito_survival_2.jpg" onclick="location.href='http://localhost/Blog/exitos'" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
             </div>
@@ -70,19 +70,19 @@
             <span class="text-transparent bg-clip-text bg-gradient-to-r to-red-600 from-sky-400">Fracasos</span>
         </h2>
 
-        <div id="carousel-fracasos" class="relative w-full" data-carousel="static">
+        <div id="carousel-fracasos" class="relative w-full" data-carousel="slide">
             <!-- Carousel wrapper -->
             <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                  <!-- Item 1 -->
-                <div class="hidden duration-200 ease-linear" data-carousel-item>
+                <div class="hidden duration-700 ease-linear" data-carousel-item>
                     <img src="images/juego_fracaso_survival_1.jpg" onclick="location.href='http://localhost/Blog/fracasos'" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
                 <!-- Item 2 -->
-                <div class="hidden duration-200 ease-linear" data-carousel-item>
+                <div class="hidden duration-700 ease-linear" data-carousel-item>
                     <img src="images/juego_fracaso_survival_2.jpg" onclick="location.href='http://localhost/Blog/fracasos'" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
                 <!-- Item 3 -->
-                <div class="hidden duration-200 ease-linear" data-carousel-item="active">
+                <div class="hidden duration-700 ease-linear" data-carousel-item="active">
                     <img src="images/juego_fracaso_acción_2.jpg" onclick="location.href='http://localhost/Blog/fracasos'" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
             </div>
