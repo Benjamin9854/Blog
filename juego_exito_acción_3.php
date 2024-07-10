@@ -25,10 +25,10 @@
 
     <main class="max-w-4xl mx-auto p-4">
         <section class="bg-gradient-to-r to-yellow-500 from-red-600 p-6 rounded-lg shadow-lg mb-6">
-            <img src="./images/not_image.jpg" alt="Imagen del Juego" class="w-full h-64 object-cover rounded-lg mb-4">
-            <h2 class="text-2xl font-bold mb-2">Nombre del Juego</h2>
-            <p class="text-gray-600 mb-4">Empresa Desarrolladora: <span class="font-semibold">Nombre de la Empresa</span></p>
-            <p class="text-gray-800 mb-4">Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac sapien vel nisl placerat venenatis.</p>
+            <img src="./images/juego_exito_acción_3.jpg" alt="Imagen del Juego" class="w-full h-64 object-cover rounded-lg mb-4">
+            <h2 class="text-2xl font-bold mb-2">Red Dead Redemption 2</h2>
+            <p class="text-gray-600 mb-4">Empresa Desarrolladora: <span class="font-semibold">Rockstar Games</span></p>
+            <p class="text-gray-800 mb-4">Descripción: Conocido por su narrativa profunda y su mundo abierto detallado, ofreciendo una experiencia inmersiva en el salvaje oeste.</p>
             
             <div class="mb-4 flex items-center">
                 <h3 class="text-xl font-semibold mr-4">Calificación General: <span class="text-green-600">4.5/5</span></h3>

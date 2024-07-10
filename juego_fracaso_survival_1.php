@@ -25,10 +25,10 @@
 
     <main class="max-w-4xl mx-auto p-4">
         <section class="bg-gradient-to-r to-yellow-500 from-red-600 p-6 rounded-lg shadow-lg mb-6">
-            <img src="./images/not_image.jpg" alt="Imagen del Juego" class="w-full h-64 object-cover rounded-lg mb-4">
-            <h2 class="text-2xl font-bold mb-2">Nombre del Juego</h2>
-            <p class="text-gray-600 mb-4">Empresa Desarrolladora: <span class="font-semibold">Nombre de la Empresa</span></p>
-            <p class="text-gray-800 mb-4">Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac sapien vel nisl placerat venenatis.</p>
+            <img src="./images/juego_fracaso_survival_1.jpg" alt="Imagen del Juego" class="w-full h-64 object-cover rounded-lg mb-4">
+            <h2 class="text-2xl font-bold mb-2">Metal Gear Survive</h2>
+            <p class="text-gray-600 mb-4">Empresa Desarrolladora: <span class="font-semibold">Konami</span></p>
+            <p class="text-gray-800 mb-4">Descripción: Recibió críticas por desviarse del legado de la serie Metal Gear, con una jugabilidad que no resonó con los fans de la franquicia.</p>
             
             <div class="mb-4 flex items-center">
                 <h3 class="text-xl font-semibold mr-4">Calificación General: <span class="text-green-600">4.5/5</span></h3>

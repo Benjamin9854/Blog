@@ -88,7 +88,7 @@
     <div id="main-container"></div>
 
     <script>
-        const genres = ['Acción', 'Terror', 'Survival', 'Mundo Abierto'];
+        const genres = ['Acción', 'Terror', 'Survival', 'Mundo_Abierto'];
         const mainContainer = document.getElementById('main-container');
         const carouselSectionTemplate = document.getElementById('carousel-section-template').content;
         const cardTemplate = document.getElementById('card-template').content;
@@ -100,6 +100,8 @@
                 newCard.querySelector('h5').textContent = `Juego ${i}`;
                 const linkUrl = `http://localhost/Blog/juego_exito_${genre.toLowerCase()}_${i}`;
                 newCard.querySelectorAll('.card-link').forEach(link => link.href = linkUrl);
+                const imgUrl = `./images/juego_exito_${genre.toLowerCase()}_${i}.jpg`;
+                newCard.querySelector('img').src = imgUrl;
                 carousel.appendChild(newCard);
             }
         }

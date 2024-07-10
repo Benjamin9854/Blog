@@ -25,10 +25,10 @@
 
     <main class="max-w-4xl mx-auto p-4">
         <section class="bg-gradient-to-r to-yellow-500 from-red-600 p-6 rounded-lg shadow-lg mb-6">
-            <img src="./images/juego_exito_acción_2.JPG" alt="Imagen del Juego" class="w-full h-64 object-cover rounded-lg mb-4">
-            <h2 class="text-2xl font-bold mb-2">The Legend of Zelda: Breath of the Wild</h2>
-            <p class="text-gray-600 mb-4">Empresa Desarrolladora: <span class="font-semibold">Nintendo</span></p>
-            <p class="text-gray-800 mb-4">Descripción: Aclamado por su innovador diseño de juego, ofreciendo una libertad sin precedentes en un mundo abierto lleno de exploración y aventuras.</p>
+            <img src="./images/juego_fracaso_terror_2.jpg" alt="Imagen del Juego" class="w-full h-64 object-cover rounded-lg mb-4">
+            <h2 class="text-2xl font-bold mb-2">Silent Hill: Downpour</h2>
+            <p class="text-gray-600 mb-4">Empresa Desarrolladora: <span class="font-semibold">Vatra Games</span></p>
+            <p class="text-gray-800 mb-4">Descripción: No logró estar a la altura de las expectativas de la serie, con críticas hacia su jugabilidad y diseño de niveles.</p>
             
             <div class="mb-4 flex items-center">
                 <h3 class="text-xl font-semibold mr-4">Calificación General: <span class="text-green-600">4.5/5</span></h3>
