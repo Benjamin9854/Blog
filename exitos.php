@@ -54,31 +54,29 @@
             <div class="relative max-w-full mx-auto">
                 <!-- Carousel container -->
                 <div class="carousel">
-                    <!-- Card Template -->
+                    <!-- Carousel items will be injected here -->
                 </div>
                 <!-- Navigation buttons -->
-                <button class="nav-button left-4 prev">&#10094;</button>
-                <button class="nav-button right-4 next">&#10095;</button>
+                <button class="nav-button prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/>
+                    </svg>
+                </button>
+                <button class="nav-button next">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/>
+                    </svg>
+                </button>
             </div>
         </div>
     </template>
 
     <!-- Card Template -->
     <template id="card-template">
-        <div class="carousel-item">
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <img class="rounded-t-lg" src="./images/not_image.jpg" alt="imagen no encontrada" />
+        <div class="carousel-item p-4">
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
                 <div class="p-5">
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Juego</h5>
-                    </a>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Aquí está la descripción</p>
-                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Ver crítica
-                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                        </svg>
-                    </a>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Juego</h5>
                 </div>
             </div>
         </div>
@@ -88,29 +86,34 @@
     <div id="main-container"></div>
 
     <script>
-        const genres = ['Acción', 'Terror', 'Survival', 'Mundo Abierto'];
+        const genres = {
+            'Acción': ['Grand Theft Auto V', 'The Legend of Zelda: Breath of the Wild', 'Red Dead Redemption 2'],
+            'Terror': ['Resident Evil 2 (Remake)', 'Silent Hill 2', 'Outlast'],
+            'Supervivencia': ['Minecraft', 'ARK: Survival Evolved', 'Subnautica'],
+            'Mundo Abierto': ['The Elder Scrolls V: Skyrim', 'The Witcher 3: Wild Hunt', 'Assassin\'s Creed Odyssey']
+        };
         const mainContainer = document.getElementById('main-container');
         const carouselSectionTemplate = document.getElementById('carousel-section-template').content;
         const cardTemplate = document.getElementById('card-template').content;
 
         // Function to add cards to a carousel
-        function addCards(carousel, num) {
-            for (let i = 1; i <= num; i++) {
+        function addCards(carousel, games) {
+            games.forEach(game => {
                 const newCard = cardTemplate.cloneNode(true);
-                newCard.querySelector('h5').textContent = `Juego ${i}`;
+                newCard.querySelector('h5').textContent = game;
                 carousel.appendChild(newCard);
-            }
+            });
         }
 
         // Function to add a carousel section
-        function addCarouselSection(genre) {
+        function addCarouselSection(genre, games) {
             const newSection = carouselSectionTemplate.cloneNode(true);
             newSection.querySelector('.section-title span').textContent = genre;
             const carousel = newSection.querySelector('.carousel');
             const prevButton = newSection.querySelector('.prev');
             const nextButton = newSection.querySelector('.next');
 
-            addCards(carousel, 6); // Add 6 cards per carousel
+            addCards(carousel, games); // Add games to the carousel
 
             nextButton.addEventListener('click', () => {
                 carousel.scrollBy({ left: carousel.clientWidth, behavior: 'smooth' });
@@ -124,8 +127,8 @@
         }
 
         // Add carousels for each genre
-        genres.forEach(genre => {
-            addCarouselSection(genre);
+        Object.keys(genres).forEach(genre => {
+            addCarouselSection(genre, genres[genre]);
         });
     </script>
 </body>
