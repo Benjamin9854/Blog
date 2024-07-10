@@ -34,7 +34,7 @@
             background-color: rgba(31, 41, 55, 1);
         }
         body {
-            background-image:url('images/background_usuarios.png');
+            background-image: url('images/background_usuarios.png');
             color: white;
             font-family: 'Arial', sans-serif;
         }
@@ -69,11 +69,11 @@
             <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <img class="rounded-t-lg" src="./images/not_image.jpg" alt="imagen no encontrada" />
                 <div class="p-5">
-                    <a href="#">
+                    <a href="#" class="card-link">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Juego</h5>
                     </a>
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Aquí está la descripción</p>
-                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 card-link">
                         Ver crítica
                         <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -94,10 +94,12 @@
         const cardTemplate = document.getElementById('card-template').content;
 
         // Function to add cards to a carousel
-        function addCards(carousel, num) {
+        function addCards(carousel, num, genre) {
             for (let i = 1; i <= num; i++) {
                 const newCard = cardTemplate.cloneNode(true);
                 newCard.querySelector('h5').textContent = `Juego ${i}`;
+                const linkUrl = `http://localhost/Blog/juego_exito_${genre.toLowerCase()}_${i}`;
+                newCard.querySelectorAll('.card-link').forEach(link => link.href = linkUrl);
                 carousel.appendChild(newCard);
             }
         }
@@ -110,7 +112,7 @@
             const prevButton = newSection.querySelector('.prev');
             const nextButton = newSection.querySelector('.next');
 
-            addCards(carousel, 6); // Add 6 cards per carousel
+            addCards(carousel, 6, genre); // Add 6 cards per carousel
 
             nextButton.addEventListener('click', () => {
                 carousel.scrollBy({ left: carousel.clientWidth, behavior: 'smooth' });
